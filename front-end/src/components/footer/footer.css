@@ -1,0 +1,165 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    margin: 40px auto 10px;
+}
+
+.footerLogo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerLogo p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footerLinks {
+    list-style-type: none;
+    gap: 30px;
+    display: flex;
+    font-weight: 500;
+}
+
+.footerLink {
+    cursor: pointer;
+}
+
+.footerSocialIcons {
+    display: flex;
+    gap: 20px;
+}
+
+.footerCopyRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.footerCopyRight hr {
+    width: 80%;
+    border: none;
+    border-radius: 3px;
+    height: 3px;
+    background-color: rgb(167, 132, 86); 
+}
+
+@media (max-width:1024px) {
+    .footer {
+        gap:25px;
+    }
+
+    .footerLogo {
+        gap: 0px;
+    }
+
+    .footerLogo img {
+        transform: scale(0.8);
+    }
+
+    .footerLogo p{
+        font-size: 16px;
+
+    }
+
+    .footerLinks{
+        font-size: 0.9em;
+        gap: 25px;
+    }
+
+    .footerSocialIcons{
+        gap: 17px;
+    }
+
+    .footerSocialIcon {
+        font-size: 22px !important;
+    }
+
+    .footerCopyRight {
+        gap: 15px;
+    }
+
+    .footerCopyRight p{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width:800px) {
+    .footer {
+        gap:18px;
+    }
+
+    
+    .footerLogo img {
+        transform: scale(0.6);
+    }
+
+    .footerLogo p{
+        margin-left: -8px;
+        font-size: 14px;
+
+    }
+
+    .footerLinks{
+        margin-top: -10px;
+        gap: 18px;
+    }
+
+    .footerSocialIcons{
+        gap: 15px;
+    }
+
+    .footerSocialIcon {
+        font-size: 20px !important;
+    }
+
+    .footerCopyRight {
+        gap: 10px;
+    }
+
+    .footerCopyRight p{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:600px) {
+    .footer {
+        gap:14px;
+    }
+
+
+    .footerLogo img {
+        transform: scale(0.5);
+    }
+
+    .footerLogo p{
+        margin-left: -12px;
+        font-size: 13px;
+
+    }
+
+    .footerLinks{
+        font-size: 0.8em;
+        gap: 15px;
+    }
+
+    .footerSocialIcons{
+        gap: 12px;
+    }
+
+    .footerSocialIcon {
+        font-size: 17px !important;
+    }
+
+    .footerCopyRight {
+        gap: 10px;
+    }
+}

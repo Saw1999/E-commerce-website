@@ -1,0 +1,209 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.navLogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navLogo h2 {
+    color: rgb(167, 132, 86);   
+}
+
+.navLogoImg {
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.navDropDown {
+    display: none !important;
+}
+
+.navMenu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: rgb(167, 132, 86) ;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navMenu li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.navMenu hr {
+    width: 100%;
+    height: 3px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(167, 132, 86);
+}
+
+.navCart {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.navLoginBtn {
+    cursor: pointer;
+    width: 110px;
+    height: 43px;
+    outline: none;
+    border: 1px solid rgb(167, 132, 86);
+    border-radius: 50px;
+    color: rgb(167, 132, 86);
+    font-size: 16px;
+    font-weight: 600;
+    background-color:  rgb(252, 241, 227);
+}
+
+.navLoginBtn:active {
+    background-color: rgb(235, 219, 197);
+}
+
+.navCartCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 50%;
+    font-size: 13px;
+    background-color:  rgb(167, 132, 86);
+    color: white ;
+}
+
+@media (max-width:1024px) {
+    .navMenu {
+        gap: 38px;
+        font-size: 18px;
+    }
+
+    .navbar h2 {
+        font-size: 22px;
+    }
+
+    .navLoginBtn {
+        width: 90px;
+        height: 38px;
+    }
+
+    .navCartIcon {
+        width: 35px;
+    }
+    
+    .navCartCount {
+        width: 18px;
+        height: 18px;
+        margin-left: -50px;
+    }
+}
+
+@media (max-width:800px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar h2 {
+        font-size: 20px;
+    }
+
+    .navLogoImg {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .navDropDown {
+        display: block !important;
+        font-size: 27px !important;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+
+    .navMenu {
+        display: none;    
+        width: 100%;
+        height: 80px;
+        justify-content: center;
+        position: absolute;
+        font-size: 17px;
+        top: 50px;
+    }
+
+    .navMenuVisible {
+        display: flex;
+    }
+
+
+    .navDropDown.open {
+        transform: rotate(90deg);
+    }
+
+    .navLoginBtn {
+        width: 80px;
+        height: 32px;
+    }
+
+    .navCartIcon {
+        width: 30px;
+    }
+    
+    .navCartCount {
+        width: 15px;
+        height: 15px;
+        margin-top: -30px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .navbar {
+        padding: 8px 0px;
+    }
+    
+    .navLogo {
+        transform: scale(0.8);
+    }
+
+    .navMenu {
+        height: 70px;
+        font-size: 16px;
+    }
+
+    .navLoginBtn {
+        width: 75px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .navCartIcon {
+        width: 25px;
+    }
+    
+    .navCartCount {
+        width: 12px;
+        height: 12px;
+        margin-top: -28px;
+        font-size: 9px;
+    }
+}
+

@@ -1,0 +1,44 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 20px;
+    width: 100%;
+    max-width: 250px;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.sidebarItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 20px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    gap: 20px;
+    cursor: pointer;
+    background-color: rgb(122, 151, 162);
+    color: white;
+}
+
+
+.addProductIcon, .productListIcon {
+    color: white !important;
+    font-size: 32px !important;
+}
+
+@media (max-width:800px) {
+    .sidebar {
+        justify-content: center;
+        padding: 30px 0;
+        flex-direction: row;
+        max-width: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebarItem {
+        margin: 0;
+    }
+}

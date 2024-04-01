@@ -1,0 +1,169 @@
+.new {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.newLeft {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 150px;
+    line-height: 1.1;
+}
+
+.newLeft h2 {
+    color: rgb(167, 132, 86);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.newLeft p {
+    color:  rgb(167, 132, 86);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.5em
+}
+
+.newHandIcon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.newHandIcon img {
+    width: 48px;
+}
+
+.newLatest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 75px ;
+    margin-top: 30px;
+    background-color: rgb(235, 219, 197);
+    color: rgb(167, 132, 86);
+    font-size: 22px;
+    font-weight: 500;
+    width: 280px;
+    height: 40px;
+}
+
+.latestText, .newArrowIcon {
+    background:  rgb(235, 219, 197);
+   
+}
+
+.newRight img{
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+}
+
+@media (max-width:1024px) {
+    .newLeft {
+        padding-left: 110px;
+    }
+
+    .newLeft h2 {
+        font-size: 18px;
+    }
+
+    .newLeft p {
+        font-size: 22px;
+    }
+
+    .newHandIcon {
+        gap: 10px;
+    }
+
+    .newHandIcon img{
+        width: 35px;
+    }
+
+    .newRight img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .newLatest {
+        font-size: 17px;
+        gap: 10px;
+        width: 230px;
+        height: 30px;
+    }
+}
+
+@media (max-width:800px) {
+    .newLeft {
+        padding-left: 30px;
+    }
+
+    .newLeft p {
+        font-size: 18px;
+    }
+
+    .newHandIcon {
+        gap: 10px;
+    }
+
+    .newHandIcon img{
+        width: 28px;
+    }
+
+    .newRight img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .newLatest {
+        margin-top: 20px;
+        font-size: 14px;
+        gap: 8px;
+        width: 200px;
+    }
+}
+
+@media (max-width:600px) {
+    .newLeft {
+        padding-left: 10px;
+    }
+
+    .newLeft h1 {
+        font-size: 15px;
+    }
+
+    .newLeft p {
+        font-size: 15px;
+    }
+
+    .newHandIcon {
+        gap: 8px;
+    }
+
+    .newHandIcon img{
+        width: 20px;
+    }
+
+    .newRight {
+        padding-top: 20px;
+    }
+
+    .newRight img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .newLatest {
+        margin-top: 15px;
+        font-size: 11px;
+        gap: 3px;
+        width: 150px;
+        height: 25px;
+    }
+}
+
+

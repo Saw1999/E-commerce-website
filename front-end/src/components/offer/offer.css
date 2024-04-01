@@ -1,0 +1,110 @@
+.offer {
+    display: flex;
+    padding: 0px 50px;
+}
+
+.offerLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.offerLeft h1 {
+    font-size: 40px;
+}
+
+.offerLeft p {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.offerLeftBtn {
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: rgb(167, 132, 86);
+    cursor: pointer;
+}
+
+.offerLeftBtn:active {
+    background-color: rgb(235, 219, 197);
+}
+
+.offerRight {
+    flex: 1;
+    display: flex;
+    padding-top: 30px;
+}
+
+
+.exclusiveImg {
+    width: 80%;
+}
+
+
+@media (max-width:1024px) {
+    .offerLeft h1 {
+        font-size: 30px;
+    }
+    
+    .offerLeft p {
+        font-size: 1.2em;
+    }
+
+    .offerLeftBtn {
+        width: 120px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:800px) {
+    .offerLeft {
+        gap: 15px;
+    }
+
+    .offerLeft h1 {
+        font-size: 25px;
+    }
+
+    .offerLeft p {
+        font-size: 1em;
+    }
+
+    .offerLeftBtn {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .offerRight {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .offerLeft {
+        gap: 10px;
+    }
+
+    .offerLeft h1 {
+        font-size: 20px;
+    }
+
+    .offerLeft p {
+        font-size: 0.8em;
+    }
+
+    .offerLeftBtn {
+        width: 80px;
+        height: 25px;
+        font-size: 11px;
+    }
+}
+

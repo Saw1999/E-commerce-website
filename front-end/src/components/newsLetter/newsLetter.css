@@ -1,0 +1,128 @@
+.newsLetter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 50px;
+    margin: 0 auto;
+}
+
+.newsLetter h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.newsLetter p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.newsLetterForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 50px;
+    border-radius: 80px;
+    border: 1px solid rgb(167, 132, 86);
+}
+
+.newsLetterForm input {
+    background-color: rgb(252, 241, 227);
+    width: 68%;
+    margin-left: 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(167, 132, 86);
+}
+
+.newsLetterForm button {
+    width: 32%;
+    height: 50px;
+    font-size: 16px;
+    background-color:rgb(167, 132, 86);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    border:none;
+}
+
+.newsLetterForm button:active{
+    background-color: rgb(235, 219, 197);
+}
+
+@media (max-width:1024px) {
+    .newsLetter h1 {
+        font-size: 30px;
+    }
+
+    .newsLetter p {
+        font-size: 1.1em;
+    }
+
+    .newsLetterForm {
+        width: 380px;
+        height: 40px;
+    }
+
+    .newsLetterForm input {
+        font-size: 15px;
+        margin-left: 16px;
+    }
+
+    .newsLetterForm button {
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:800px) {
+    .newsLetter h1 {
+        font-size: 24px;
+    }
+    .newsLetter p {
+        font-size: 1em;
+    }
+
+    .newsLetterForm {
+        width: 320px;
+        height: 35px;
+    }
+
+    .newsLetterForm input {
+        font-size: 14px;
+        margin-left: 12px;
+    }
+
+    .newsLetterForm button {
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:600px) {
+    .newsLetter h1 {
+        font-size: 18px;
+    }
+
+    .newsLetter p {
+        font-size: 0.8em;
+    }
+
+    .newsLetterForm {
+        width: 270px;
+        height: 28px;
+    }
+
+    .newsLetterForm input {
+        font-size: 13px;
+        margin-left: 12px;
+    }
+
+    .newsLetterForm button {
+        height: 28px;
+        font-size: 12px;
+    }
+}

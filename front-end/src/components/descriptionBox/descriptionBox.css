@@ -1,0 +1,85 @@
+.descBox {
+    margin: 120px 170px;
+}
+
+.descBoxNav {
+    display: flex;
+}
+
+.descBoxNavBox {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 170px;
+    height: 50px;
+    border: 1px solid rgb(167, 132, 86);
+}
+
+.descBoxNavBox.click{
+    background-color: rgb(227, 215, 199);
+}
+
+.descBoxDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid rgb(167, 132, 86);
+    padding: 30px;
+    line-height: 1.8em;
+}
+
+@media (max-width:1024px) {
+    .descBox {
+        margin: 90px 100px;
+    }
+    
+    .descBoxNavBox {
+        font-size: 16px;
+        width: 130px;
+        height: 40px;
+    }
+    
+    .descBoxDesc {
+        gap: 13px 18px;
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:800px) {
+    .descBox {
+        margin: 60px 65px;
+    }
+    
+    .descBoxNavBox {
+        font-size: 14px;
+        width: 110px;
+        height: 30px;
+    }
+    
+    .descBoxDesc {
+        gap: 8px;
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:580px) {
+    .descBox {
+        margin: 45px 30px;
+    }
+    
+    .descBoxNavBox {
+        font-size: 12px;
+        height: 25px;
+    }
+    
+    .descBoxDesc {
+        gap: 5px;
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+}

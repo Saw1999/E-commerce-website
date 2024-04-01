@@ -1,0 +1,205 @@
+.signinSignup {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.signinSignupContainer { 
+    margin: 0 auto ;
+    background-color: rgb(245, 243, 243);
+    width: 600px;
+    height: 600px;
+    padding: 40px 60px;
+}
+
+.signinSignupContainer h1{
+    margin: 20px 0px;
+
+}
+
+.signinSignupFields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.signinSignupFields input{
+    width: 100%;
+    background-color: rgb(252, 241, 227);
+    border-radius: 10px;
+    border: none;
+    border: 1px solid rgb(167, 132, 86);
+    outline: none;
+    padding-left: 20px;
+    font-size: 18px;
+    color:rgb(167, 132, 86);
+    height: 50px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: rgb(167, 132, 86);
+}
+
+.signinSignupContainer button{
+    width: 200px;
+    height: 50px;
+    background-color:rgb(167, 132, 86) ;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.signinSignupContainer button:active {
+    background-color:rgb(205, 186, 162) ;
+}
+
+.signinSignup_Signin {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.signinSignup_Signin span {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.signinSignupAgree {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+    gap:15px;
+}
+
+@media (max-width:1024px) {
+    .signinSignup {
+        padding-top: 70px;
+    }
+
+    .signinSignupContainer {
+        width: 450px;
+        height: 450px;
+        padding: 30px 50px;
+    }
+
+    .signinSignupContainer h1{
+        font-size: 30px;
+        margin: 12px 0;
+    }
+
+    .signinSignupFields {
+        gap: 17px;
+    }
+
+    .signinSignupFields input {
+        font-size: 16px;
+        height: 40px;
+        padding-left: 15px;
+    }
+
+    .signinSignupContainer button {
+        width: 160px;
+        height: 38px;
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    .signinSignup_Signin {
+        font-size: 16px;
+    }
+
+    .signinSignupAgree {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:800px) {
+    .signinSignupContainer {
+        width: 350px;
+        height: 350px;
+    }
+
+    .signinSignupContainer h1{
+        font-size: 24px;
+        margin: 8px 0;
+    }
+
+    .signinSignupFields {
+        margin-top: 20px;
+        gap: 13px;
+    }
+
+    .signinSignupFields input {
+        font-size: 14px;
+        height: 30px;
+        padding-left: 12px;
+    }
+
+    .signinSignupContainer button {
+        width: 110px;
+        height: 30px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .signinSignup_Signin {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .signinSignupAgree {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width:550px) {
+
+    .signinSignupContainer {
+        width: 250px;
+        height: 300px;
+        padding: 25px 40px;
+    }
+
+    .signinSignupContainer h1{
+        font-size: 20px;
+        margin: 5px 0;
+    }
+
+    .signinSignupFields {
+        margin-top: 13px;
+        gap: 13px;
+    }
+
+    .signinSignupFields input {
+        font-size: 12px;
+        height: 25px;
+        padding-left: 8px;
+    }
+
+    .signinSignupContainer button {
+        width: 80px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .signinSignup_Signin {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .signinSignupAgree {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+}
+
+
+
